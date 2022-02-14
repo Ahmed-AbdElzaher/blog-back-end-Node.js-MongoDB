@@ -4,7 +4,7 @@ const bcrypt = require("bcrypt")
 const jwt = require('jsonwebtoken');
 
 // REGISTER
-router.post("/register",async (req, res) => { // اشتغلت في الانجلر
+router.post("/register",async (req, res) => { 
     try {
         const salt = await bcrypt.genSalt(10);
         const hashedPass = await bcrypt.hash(req.body.password,salt)
@@ -30,7 +30,7 @@ router.post("/register",async (req, res) => { // اشتغلت في الانجل�
 })
 
 // LOGIN
-router.post("/login", async (req, res) => { // اشتغلت في الانجلر
+router.post("/login", async (req, res) => { 
     try {
         const user = await User.findOne({username: req.body.username});
         if(!user){
@@ -57,7 +57,7 @@ router.post("/login", async (req, res) => { // اشتغلت في الانجلر
     }
 })
 
-// router.post("/login", async (req, res) => { // اشتغلت في الانجلر
+// router.post("/login", async (req, res) => { 
 //     try {
 //         const user = await User.findOne({username: req.body.username});
 //         if(!user){
