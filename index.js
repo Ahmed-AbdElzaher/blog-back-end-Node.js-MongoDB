@@ -1,4 +1,4 @@
-const express = require('express'); // الريكواير بتيجي مع اسم الباكدجس اللي عملتلها انستال
+const express = require('express');
 const app = express();
 const dotenv = require('dotenv');
 const mongoose = require('mongoose');
