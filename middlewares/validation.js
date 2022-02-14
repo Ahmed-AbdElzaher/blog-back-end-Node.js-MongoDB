@@ -7,7 +7,6 @@ const validateUser = (req, res, next) => {
   };
 
 
-// لسة محتاجه تتهندل ص20
 
 
 module.exports = {
